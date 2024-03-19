@@ -1,0 +1,19 @@
+vocab_size: 28
+
+model0:
+  hidden_dim: 128
+  input_available_dim: 28 
+  max_sequence_length: 28
+  target_dim: 28
+  num_layers: 3
+  lstm_bidirectional: False
+  use_embedding: False
+  embed_dim: 5
+  models_path: ./checkpoints/
+
+
+data: 
+  max_sequence_length: 40
+
+training: 
+  learning_rate: 1e-3
