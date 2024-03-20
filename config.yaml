@@ -9,11 +9,15 @@ model0:
   lstm_bidirectional: False
   use_embedding: False
   embed_dim: 5
-  models_path: ./checkpoints/
+  models_path: ./checkpoints
 
 
 data: 
   max_sequence_length: 40
+  raw: ./data/raw/words_250000_train.txt
+  train_target: ./data/train
+  test_target: ./data/test 
+  drop_data_ratio: 0.7
 
 training: 
   learning_rate: 1e-3
